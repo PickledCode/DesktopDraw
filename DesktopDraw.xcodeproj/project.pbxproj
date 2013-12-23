@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA5950DD1868B2C600603952 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5950DC1868B2C600603952 /* ScriptingBridge.framework */; };
+		FA5950EB1868CA7200603952 /* ANIconArrangement.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950E61868CA7200603952 /* ANIconArrangement.m */; };
+		FA5950EC1868CA7200603952 /* ANIconPath.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950E81868CA7200603952 /* ANIconPath.m */; };
+		FA5950ED1868CA7200603952 /* ANIconUndoStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950EA1868CA7200603952 /* ANIconUndoStack.m */; };
+		FA5950F11868CA9B00603952 /* ANDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950F01868CA9B00603952 /* ANDrawView.m */; };
+		FA5950F51868CADF00603952 /* ANDrawWC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950F31868CADF00603952 /* ANDrawWC.m */; };
+		FA5950F61868CADF00603952 /* ANDrawWC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5950F41868CADF00603952 /* ANDrawWC.xib */; };
 		FACD07FA1867E69D0093ED31 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACD07F91867E69D0093ED31 /* Cocoa.framework */; };
 		FACD08041867E69D0093ED31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FACD08021867E69D0093ED31 /* InfoPlist.strings */; };
 		FACD08061867E69D0093ED31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FACD08051867E69D0093ED31 /* main.m */; };
@@ -14,23 +21,22 @@
 		FACD080D1867E69D0093ED31 /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FACD080C1867E69D0093ED31 /* ANAppDelegate.m */; };
 		FACD08101867E69D0093ED31 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACD080E1867E69D0093ED31 /* MainMenu.xib */; };
 		FACD08121867E69D0093ED31 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACD08111867E69D0093ED31 /* Images.xcassets */; };
-		FACD08191867E69D0093ED31 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACD08181867E69D0093ED31 /* XCTest.framework */; };
-		FACD081A1867E69D0093ED31 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACD07F91867E69D0093ED31 /* Cocoa.framework */; };
-		FACD08221867E69D0093ED31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FACD08201867E69D0093ED31 /* InfoPlist.strings */; };
-		FACD08241867E69D0093ED31 /* DesktopDrawTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FACD08231867E69D0093ED31 /* DesktopDrawTests.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FACD081B1867E69D0093ED31 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FACD07EE1867E69D0093ED31 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FACD07F51867E69D0093ED31;
-			remoteInfo = DesktopDraw;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		FA5950DC1868B2C600603952 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		FA5950E51868CA7200603952 /* ANIconArrangement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANIconArrangement.h; sourceTree = "<group>"; };
+		FA5950E61868CA7200603952 /* ANIconArrangement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANIconArrangement.m; sourceTree = "<group>"; };
+		FA5950E71868CA7200603952 /* ANIconPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANIconPath.h; sourceTree = "<group>"; };
+		FA5950E81868CA7200603952 /* ANIconPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANIconPath.m; sourceTree = "<group>"; };
+		FA5950E91868CA7200603952 /* ANIconUndoStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANIconUndoStack.h; sourceTree = "<group>"; };
+		FA5950EA1868CA7200603952 /* ANIconUndoStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANIconUndoStack.m; sourceTree = "<group>"; };
+		FA5950EF1868CA9B00603952 /* ANDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDrawView.h; sourceTree = "<group>"; };
+		FA5950F01868CA9B00603952 /* ANDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANDrawView.m; sourceTree = "<group>"; };
+		FA5950F21868CADF00603952 /* ANDrawWC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDrawWC.h; sourceTree = "<group>"; };
+		FA5950F31868CADF00603952 /* ANDrawWC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANDrawWC.m; sourceTree = "<group>"; };
+		FA5950F41868CADF00603952 /* ANDrawWC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ANDrawWC.xib; sourceTree = "<group>"; };
+		FA9A3C581868B0520001B4BF /* Finder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Finder.h; sourceTree = "<group>"; };
 		FACD07F61867E69D0093ED31 /* DesktopDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACD07F91867E69D0093ED31 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FACD07FC1867E69D0093ED31 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -45,11 +51,7 @@
 		FACD080C1867E69D0093ED31 /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
 		FACD080F1867E69D0093ED31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FACD08111867E69D0093ED31 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FACD08171867E69D0093ED31 /* DesktopDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesktopDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACD08181867E69D0093ED31 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FACD081F1867E69D0093ED31 /* DesktopDrawTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DesktopDrawTests-Info.plist"; sourceTree = "<group>"; };
-		FACD08211867E69D0093ED31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FACD08231867E69D0093ED31 /* DesktopDrawTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesktopDrawTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,27 +59,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5950DD1868B2C600603952 /* ScriptingBridge.framework in Frameworks */,
 				FACD07FA1867E69D0093ED31 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FACD08141867E69D0093ED31 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FACD081A1867E69D0093ED31 /* Cocoa.framework in Frameworks */,
-				FACD08191867E69D0093ED31 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA5950E41868CA7200603952 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA5950E51868CA7200603952 /* ANIconArrangement.h */,
+				FA5950E61868CA7200603952 /* ANIconArrangement.m */,
+				FA5950E71868CA7200603952 /* ANIconPath.h */,
+				FA5950E81868CA7200603952 /* ANIconPath.m */,
+				FA5950E91868CA7200603952 /* ANIconUndoStack.h */,
+				FA5950EA1868CA7200603952 /* ANIconUndoStack.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA5950EE1868CA9B00603952 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA5950EF1868CA9B00603952 /* ANDrawView.h */,
+				FA5950F01868CA9B00603952 /* ANDrawView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FACD07ED1867E69D0093ED31 = {
 			isa = PBXGroup;
 			children = (
 				FACD07FF1867E69D0093ED31 /* DesktopDraw */,
-				FACD081D1867E69D0093ED31 /* DesktopDrawTests */,
 				FACD07F81867E69D0093ED31 /* Frameworks */,
 				FACD07F71867E69D0093ED31 /* Products */,
 			);
@@ -87,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				FACD07F61867E69D0093ED31 /* DesktopDraw.app */,
-				FACD08171867E69D0093ED31 /* DesktopDrawTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +109,7 @@
 		FACD07F81867E69D0093ED31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA5950DC1868B2C600603952 /* ScriptingBridge.framework */,
 				FACD07F91867E69D0093ED31 /* Cocoa.framework */,
 				FACD08181867E69D0093ED31 /* XCTest.framework */,
 				FACD07FB1867E69D0093ED31 /* Other Frameworks */,
@@ -115,8 +130,14 @@
 		FACD07FF1867E69D0093ED31 /* DesktopDraw */ = {
 			isa = PBXGroup;
 			children = (
+				FA5950EE1868CA9B00603952 /* View */,
+				FA5950E41868CA7200603952 /* Model */,
+				FA9A3C581868B0520001B4BF /* Finder.h */,
 				FACD080B1867E69D0093ED31 /* ANAppDelegate.h */,
 				FACD080C1867E69D0093ED31 /* ANAppDelegate.m */,
+				FA5950F21868CADF00603952 /* ANDrawWC.h */,
+				FA5950F31868CADF00603952 /* ANDrawWC.m */,
+				FA5950F41868CADF00603952 /* ANDrawWC.xib */,
 				FACD080E1867E69D0093ED31 /* MainMenu.xib */,
 				FACD08111867E69D0093ED31 /* Images.xcassets */,
 				FACD08001867E69D0093ED31 /* Supporting Files */,
@@ -132,24 +153,6 @@
 				FACD08051867E69D0093ED31 /* main.m */,
 				FACD08071867E69D0093ED31 /* DesktopDraw-Prefix.pch */,
 				FACD08081867E69D0093ED31 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FACD081D1867E69D0093ED31 /* DesktopDrawTests */ = {
-			isa = PBXGroup;
-			children = (
-				FACD08231867E69D0093ED31 /* DesktopDrawTests.m */,
-				FACD081E1867E69D0093ED31 /* Supporting Files */,
-			);
-			path = DesktopDrawTests;
-			sourceTree = "<group>";
-		};
-		FACD081E1867E69D0093ED31 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FACD081F1867E69D0093ED31 /* DesktopDrawTests-Info.plist */,
-				FACD08201867E69D0093ED31 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -174,24 +177,6 @@
 			productReference = FACD07F61867E69D0093ED31 /* DesktopDraw.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FACD08161867E69D0093ED31 /* DesktopDrawTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FACD082A1867E69D0093ED31 /* Build configuration list for PBXNativeTarget "DesktopDrawTests" */;
-			buildPhases = (
-				FACD08131867E69D0093ED31 /* Sources */,
-				FACD08141867E69D0093ED31 /* Frameworks */,
-				FACD08151867E69D0093ED31 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FACD081C1867E69D0093ED31 /* PBXTargetDependency */,
-			);
-			name = DesktopDrawTests;
-			productName = DesktopDrawTests;
-			productReference = FACD08171867E69D0093ED31 /* DesktopDrawTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,11 +186,6 @@
 				CLASSPREFIX = AN;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Alex Nichol";
-				TargetAttributes = {
-					FACD08161867E69D0093ED31 = {
-						TestTargetID = FACD07F51867E69D0093ED31;
-					};
-				};
 			};
 			buildConfigurationList = FACD07F11867E69D0093ED31 /* Build configuration list for PBXProject "DesktopDraw" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -221,7 +201,6 @@
 			projectRoot = "";
 			targets = (
 				FACD07F51867E69D0093ED31 /* DesktopDraw */,
-				FACD08161867E69D0093ED31 /* DesktopDrawTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,17 +211,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FACD08041867E69D0093ED31 /* InfoPlist.strings in Resources */,
+				FA5950F61868CADF00603952 /* ANDrawWC.xib in Resources */,
 				FACD08121867E69D0093ED31 /* Images.xcassets in Resources */,
 				FACD080A1867E69D0093ED31 /* Credits.rtf in Resources */,
 				FACD08101867E69D0093ED31 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FACD08151867E69D0093ED31 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FACD08221867E69D0093ED31 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,28 +225,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5950EC1868CA7200603952 /* ANIconPath.m in Sources */,
+				FA5950F11868CA9B00603952 /* ANDrawView.m in Sources */,
 				FACD08061867E69D0093ED31 /* main.m in Sources */,
+				FA5950ED1868CA7200603952 /* ANIconUndoStack.m in Sources */,
+				FA5950EB1868CA7200603952 /* ANIconArrangement.m in Sources */,
+				FA5950F51868CADF00603952 /* ANDrawWC.m in Sources */,
 				FACD080D1867E69D0093ED31 /* ANAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FACD08131867E69D0093ED31 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FACD08241867E69D0093ED31 /* DesktopDrawTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FACD081C1867E69D0093ED31 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FACD07F51867E69D0093ED31 /* DesktopDraw */;
-			targetProxy = FACD081B1867E69D0093ED31 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FACD08021867E69D0093ED31 /* InfoPlist.strings */ = {
@@ -299,14 +260,6 @@
 				FACD080F1867E69D0093ED31 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		FACD08201867E69D0093ED31 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FACD08211867E69D0093ED31 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -406,46 +359,6 @@
 			};
 			name = Release;
 		};
-		FACD082B1867E69D0093ED31 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DesktopDraw.app/Contents/MacOS/DesktopDraw";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DesktopDraw/DesktopDraw-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "DesktopDrawTests/DesktopDrawTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		FACD082C1867E69D0093ED31 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DesktopDraw.app/Contents/MacOS/DesktopDraw";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DesktopDraw/DesktopDraw-Prefix.pch";
-				INFOPLIST_FILE = "DesktopDrawTests/DesktopDrawTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -465,14 +378,7 @@
 				FACD08291867E69D0093ED31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		FACD082A1867E69D0093ED31 /* Build configuration list for PBXNativeTarget "DesktopDrawTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FACD082B1867E69D0093ED31 /* Debug */,
-				FACD082C1867E69D0093ED31 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,9 +7,19 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ANDrawWC.h"
 
-@interface ANAppDelegate : NSObject <NSApplicationDelegate>
+@interface ANAppDelegate : NSObject <NSApplicationDelegate, ANDrawWCDelegate> {
+    ANDrawWC * currentWC;
+    IBOutlet NSMenuItem * redoItem;
+    IBOutlet NSMenuItem * undoItem;
+}
 
-@property (assign) IBOutlet NSWindow *window;
+- (void)updateEnabledMenuItems;
+
+- (IBAction)redo:(id)sender;
+- (IBAction)undo:(id)sender;
+
+- (void)newDocument;
 
 @end
