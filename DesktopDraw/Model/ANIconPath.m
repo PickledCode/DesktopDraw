@@ -54,10 +54,11 @@ static CGPoint distanceAlong(CGPoint s, CGPoint e, CGFloat d);
 
 - (void)applyToDesktop:(NSScreen *)theScreen {
     SBElementArray * items = application.desktop.items;
+    if (!items.count) return;
     // we have `items.count`, and we have a total length of `length`
     // now, we iterate along the path
-    CGFloat separator = length / (CGFloat)(items.count + 1);
-    __block CGFloat nextSpot = separator;
+    CGFloat separator = length / (CGFloat)(items.count);
+    __block CGFloat nextSpot = separator / 2.0;
     __block NSInteger currentIndex = 0;
     [self iterateSegments:^(int pIndex, CGFloat distance, CGFloat endDistance, BOOL * done) {
         // fill in all icons that appear on this line
