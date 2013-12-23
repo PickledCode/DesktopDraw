@@ -12,7 +12,7 @@
 /**
  * A snapshot of the desktop icon arrangement.
  */
-@interface ANIconArrangement : NSObject {
+@interface ANIconArrangement : NSObject <NSCoding> {
     NSDictionary * locations;
 }
 

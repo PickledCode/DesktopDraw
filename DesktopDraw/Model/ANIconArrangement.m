@@ -25,6 +25,17 @@ static NSString * finderItemIdentifier(FinderItem * item);
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    if ((self = [super init])) {
+        locations = [aDecoder decodeObject];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:locations];
+}
+
 - (void)applyToDesktop:(FinderDesktopObject *)object {
     for (FinderItem * item in object.items) {
         item.desktopPosition = [locations[finderItemIdentifier(item)] pointValue];

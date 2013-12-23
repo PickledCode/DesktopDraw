@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "ANIconArrangement.h"
 
-@interface ANIconUndoStack : NSObject {
+#define kMaximumStackSize 100
+
+@interface ANIconUndoStack : NSObject <NSCoding> {
     NSMutableArray * undoStack;
     NSMutableArray * redoStack;
 }

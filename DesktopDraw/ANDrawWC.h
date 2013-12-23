@@ -25,6 +25,8 @@
 @property (readonly) ANIconUndoStack * undoStack;
 @property (nonatomic, weak) id<ANDrawWCDelegate> delegate;
 
+- (id)initWithUndoStack:(ANIconUndoStack *)aStack;
+
 - (IBAction)scaleProperly:(id)sender;
 - (IBAction)positionIcons:(id)sender;
 - (IBAction)clear:(id)sender;

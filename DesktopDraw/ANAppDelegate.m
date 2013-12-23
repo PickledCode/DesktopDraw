@@ -10,9 +10,20 @@
 
 @implementation ANAppDelegate
 
++ (NSString *)savePathName {
+    NSString * path = [NSHomeDirectory() stringByAppendingPathComponent:@"Library/Application Support"];
+    path = [path stringByAppendingPathComponent:[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"]];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+        [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:NO attributes:nil error:nil];
+    }
+    path = [path stringByAppendingPathComponent:@"undostack.dat"];
+    return path;
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // do something here to create a new document
     [self newDocument];
+    [self updateEnabledMenuItems];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
@@ -34,12 +45,12 @@
 
 - (IBAction)redo:(id)sender {
     [currentWC redo:sender];
-    [self updateEnabledMenuItems];
+    [self drawWCChangedStack:currentWC];
 }
 
 - (IBAction)undo:(id)sender {
     [currentWC undo:sender];
-    [self updateEnabledMenuItems];
+    [self drawWCChangedStack:currentWC];
 }
 
 - (void)newDocument {

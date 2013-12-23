@@ -15,6 +15,8 @@
     IBOutlet NSMenuItem * undoItem;
 }
 
++ (NSString *)savePathName;
+
 - (void)updateEnabledMenuItems;
 
 - (IBAction)redo:(id)sender;

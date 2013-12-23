@@ -43,6 +43,10 @@
     
     FinderApplication * app = [SBApplication applicationWithBundleIdentifier:@"com.apple.Finder"];
     [undoStack.lastObject applyToDesktop:app.desktop];
+    
+    while (undoStack.count > kMaximumStackSize) {
+        [undoStack removeObjectAtIndex:0];
+    }
 }
 
 - (void)redo {
@@ -52,6 +56,19 @@
     
     FinderApplication * app = [SBApplication applicationWithBundleIdentifier:@"com.apple.Finder"];
     [undoStack.lastObject applyToDesktop:app.desktop];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    if ((self = [super init])) {
+        undoStack = [[aDecoder decodeObject] mutableCopy];
+        redoStack = [[aDecoder decodeObject] mutableCopy];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:undoStack];
+    [aCoder encodeObject:redoStack];
 }
 
 @end

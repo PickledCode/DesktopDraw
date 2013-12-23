@@ -16,6 +16,13 @@
 
 @synthesize undoStack;
 
+- (id)initWithUndoStack:(ANIconUndoStack *)aStack {
+    if ((self = [super initWithWindowNibName:@"ANDrawWC"])) {
+        undoStack = aStack;
+    }
+    return self;
+}
+
 - (id)init {
     if ((self = [super initWithWindowNibName:@"ANDrawWC"])) {
         undoStack = [[ANIconUndoStack alloc] init];
