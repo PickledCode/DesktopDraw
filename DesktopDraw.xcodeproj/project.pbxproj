@@ -14,7 +14,6 @@
 		FA7700991868FC4D0095AD72 /* DDDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7700981868FC4D0095AD72 /* DDDocument.m */; };
 		FA77009C1868FC4D0095AD72 /* DDDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA77009A1868FC4D0095AD72 /* DDDocument.xib */; };
 		FA77009F1868FC4D0095AD72 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA77009D1868FC4D0095AD72 /* MainMenu.xib */; };
-		FA7700A11868FC4D0095AD72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7700A01868FC4D0095AD72 /* Images.xcassets */; };
 		FA7700CE1869150C0095AD72 /* DDIconArrangement.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7700C61869150C0095AD72 /* DDIconArrangement.m */; };
 		FA7700CF1869150C0095AD72 /* DDIconPath.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7700C81869150C0095AD72 /* DDIconPath.m */; };
 		FA7700D01869150C0095AD72 /* DDIconUndoStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7700CA1869150C0095AD72 /* DDIconUndoStack.m */; };
@@ -22,6 +21,7 @@
 		FA7700D4186918D20095AD72 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7700D3186918D20095AD72 /* ScriptingBridge.framework */; };
 		FA7700D71869196D0095AD72 /* DDUndoController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7700D61869196D0095AD72 /* DDUndoController.m */; };
 		FA7700D918691F030095AD72 /* Finder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7700D818691F030095AD72 /* Finder.m */; };
+		FACA05BA186A1ECF00DBC155 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = FACA05B9186A1ECF00DBC155 /* icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,6 @@
 		FA7700981868FC4D0095AD72 /* DDDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDDocument.m; sourceTree = "<group>"; };
 		FA77009B1868FC4D0095AD72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DDDocument.xib; sourceTree = "<group>"; };
 		FA77009E1868FC4D0095AD72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		FA7700A01868FC4D0095AD72 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA7700A71868FC4D0095AD72 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FA7700C51869150C0095AD72 /* DDIconArrangement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDIconArrangement.h; sourceTree = "<group>"; };
 		FA7700C61869150C0095AD72 /* DDIconArrangement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDIconArrangement.m; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		FA7700D51869196D0095AD72 /* DDUndoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDUndoController.h; sourceTree = "<group>"; };
 		FA7700D61869196D0095AD72 /* DDUndoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDUndoController.m; sourceTree = "<group>"; };
 		FA7700D818691F030095AD72 /* Finder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Finder.m; sourceTree = "<group>"; };
+		FACA05B9186A1ECF00DBC155 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,6 @@
 				FA7700D61869196D0095AD72 /* DDUndoController.m */,
 				FA77009A1868FC4D0095AD72 /* DDDocument.xib */,
 				FA77009D1868FC4D0095AD72 /* MainMenu.xib */,
-				FA7700A01868FC4D0095AD72 /* Images.xcassets */,
 				FA77008C1868FC4D0095AD72 /* Supporting Files */,
 			);
 			path = DesktopDraw;
@@ -127,6 +126,7 @@
 		FA77008C1868FC4D0095AD72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FACA05B9186A1ECF00DBC155 /* icon.icns */,
 				FA77008D1868FC4D0095AD72 /* DesktopDraw-Info.plist */,
 				FA77008E1868FC4D0095AD72 /* InfoPlist.strings */,
 				FA7700911868FC4D0095AD72 /* main.m */,
@@ -214,10 +214,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA77009C1868FC4D0095AD72 /* DDDocument.xib in Resources */,
-				FA7700A11868FC4D0095AD72 /* Images.xcassets in Resources */,
 				FA7700901868FC4D0095AD72 /* InfoPlist.strings in Resources */,
 				FA7700961868FC4D0095AD72 /* Credits.rtf in Resources */,
 				FA77009F1868FC4D0095AD72 /* MainMenu.xib in Resources */,
+				FACA05BA186A1ECF00DBC155 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +390,7 @@
 				FA7700B81868FC4E0095AD72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
