@@ -12,15 +12,17 @@
 /**
  * A snapshot of the desktop icon arrangement.
  */
-@interface ANIconArrangement : NSObject <NSCoding> {
+@interface DDIconArrangement : NSObject <NSCoding> {
     NSDictionary * locations;
 }
 
 @property (readonly) NSDictionary * locations;
 
++ (DDIconArrangement *)currentArrangement;
+
 - (id)initWithDesktop:(FinderDesktopObject *)object;
 - (void)applyToDesktop:(FinderDesktopObject *)object;
 
-- (BOOL)isEqualToArrangement:(ANIconArrangement *)arr;
+- (BOOL)isEqualToArrangement:(DDIconArrangement *)arr;
 
 @end

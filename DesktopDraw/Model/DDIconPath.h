@@ -8,21 +8,19 @@
 
 #import <Foundation/Foundation.h>
 #import "Finder.h"
-#import "ANIconArrangement.h"
+#import "DDIconArrangement.h"
 
 #define kANIconPathBuffer 128
 
 /**
  * Stores an array of lines.
  */
-@interface ANIconPath : NSObject {
+@interface DDIconPath : NSObject <NSCoding> {
     CGPoint * lines; // relative to the desktop, 0.0-1.0
     CGPoint currentPoint;
     
     NSInteger pointCount, pointAlloc;
     CGFloat length;
-    
-    FinderApplication * application;
 }
 
 /**
@@ -50,7 +48,5 @@
  * length along the path.
  */
 - (void)iterateSegments:(void (^)(int pIndex, CGFloat distance, CGFloat endDistance, BOOL * done))callback;
-
-- (ANIconArrangement *)currentArrangement;
 
 @end

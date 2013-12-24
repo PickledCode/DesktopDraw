@@ -7,166 +7,169 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA5950DD1868B2C600603952 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5950DC1868B2C600603952 /* ScriptingBridge.framework */; };
-		FA5950EB1868CA7200603952 /* ANIconArrangement.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950E61868CA7200603952 /* ANIconArrangement.m */; };
-		FA5950EC1868CA7200603952 /* ANIconPath.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950E81868CA7200603952 /* ANIconPath.m */; };
-		FA5950ED1868CA7200603952 /* ANIconUndoStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950EA1868CA7200603952 /* ANIconUndoStack.m */; };
-		FA5950F11868CA9B00603952 /* ANDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950F01868CA9B00603952 /* ANDrawView.m */; };
-		FA5950F51868CADF00603952 /* ANDrawWC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950F31868CADF00603952 /* ANDrawWC.m */; };
-		FA5950F61868CADF00603952 /* ANDrawWC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5950F41868CADF00603952 /* ANDrawWC.xib */; };
-		FACD07FA1867E69D0093ED31 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACD07F91867E69D0093ED31 /* Cocoa.framework */; };
-		FACD08041867E69D0093ED31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FACD08021867E69D0093ED31 /* InfoPlist.strings */; };
-		FACD08061867E69D0093ED31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FACD08051867E69D0093ED31 /* main.m */; };
-		FACD080A1867E69D0093ED31 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FACD08081867E69D0093ED31 /* Credits.rtf */; };
-		FACD080D1867E69D0093ED31 /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FACD080C1867E69D0093ED31 /* ANAppDelegate.m */; };
-		FACD08101867E69D0093ED31 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACD080E1867E69D0093ED31 /* MainMenu.xib */; };
-		FACD08121867E69D0093ED31 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACD08111867E69D0093ED31 /* Images.xcassets */; };
+		FA7700861868FC4D0095AD72 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7700851868FC4D0095AD72 /* Cocoa.framework */; };
+		FA7700901868FC4D0095AD72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA77008E1868FC4D0095AD72 /* InfoPlist.strings */; };
+		FA7700921868FC4D0095AD72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7700911868FC4D0095AD72 /* main.m */; };
+		FA7700961868FC4D0095AD72 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA7700941868FC4D0095AD72 /* Credits.rtf */; };
+		FA7700991868FC4D0095AD72 /* DDDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7700981868FC4D0095AD72 /* DDDocument.m */; };
+		FA77009C1868FC4D0095AD72 /* DDDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA77009A1868FC4D0095AD72 /* DDDocument.xib */; };
+		FA77009F1868FC4D0095AD72 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA77009D1868FC4D0095AD72 /* MainMenu.xib */; };
+		FA7700A11868FC4D0095AD72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7700A01868FC4D0095AD72 /* Images.xcassets */; };
+		FA7700CE1869150C0095AD72 /* DDIconArrangement.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7700C61869150C0095AD72 /* DDIconArrangement.m */; };
+		FA7700CF1869150C0095AD72 /* DDIconPath.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7700C81869150C0095AD72 /* DDIconPath.m */; };
+		FA7700D01869150C0095AD72 /* DDIconUndoStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7700CA1869150C0095AD72 /* DDIconUndoStack.m */; };
+		FA7700D11869150C0095AD72 /* DDDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7700CD1869150C0095AD72 /* DDDrawView.m */; };
+		FA7700D4186918D20095AD72 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7700D3186918D20095AD72 /* ScriptingBridge.framework */; };
+		FA7700D71869196D0095AD72 /* DDUndoController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7700D61869196D0095AD72 /* DDUndoController.m */; };
+		FA7700D918691F030095AD72 /* Finder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7700D818691F030095AD72 /* Finder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA5950DC1868B2C600603952 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
-		FA5950E51868CA7200603952 /* ANIconArrangement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANIconArrangement.h; sourceTree = "<group>"; };
-		FA5950E61868CA7200603952 /* ANIconArrangement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANIconArrangement.m; sourceTree = "<group>"; };
-		FA5950E71868CA7200603952 /* ANIconPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANIconPath.h; sourceTree = "<group>"; };
-		FA5950E81868CA7200603952 /* ANIconPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANIconPath.m; sourceTree = "<group>"; };
-		FA5950E91868CA7200603952 /* ANIconUndoStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANIconUndoStack.h; sourceTree = "<group>"; };
-		FA5950EA1868CA7200603952 /* ANIconUndoStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANIconUndoStack.m; sourceTree = "<group>"; };
-		FA5950EF1868CA9B00603952 /* ANDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDrawView.h; sourceTree = "<group>"; };
-		FA5950F01868CA9B00603952 /* ANDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANDrawView.m; sourceTree = "<group>"; };
-		FA5950F21868CADF00603952 /* ANDrawWC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDrawWC.h; sourceTree = "<group>"; };
-		FA5950F31868CADF00603952 /* ANDrawWC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANDrawWC.m; sourceTree = "<group>"; };
-		FA5950F41868CADF00603952 /* ANDrawWC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ANDrawWC.xib; sourceTree = "<group>"; };
-		FA9A3C581868B0520001B4BF /* Finder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Finder.h; sourceTree = "<group>"; };
-		FACD07F61867E69D0093ED31 /* DesktopDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FACD07F91867E69D0093ED31 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		FACD07FC1867E69D0093ED31 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		FACD07FD1867E69D0093ED31 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		FACD07FE1867E69D0093ED31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FACD08011867E69D0093ED31 /* DesktopDraw-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DesktopDraw-Info.plist"; sourceTree = "<group>"; };
-		FACD08031867E69D0093ED31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FACD08051867E69D0093ED31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FACD08071867E69D0093ED31 /* DesktopDraw-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DesktopDraw-Prefix.pch"; sourceTree = "<group>"; };
-		FACD08091867E69D0093ED31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		FACD080B1867E69D0093ED31 /* ANAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANAppDelegate.h; sourceTree = "<group>"; };
-		FACD080C1867E69D0093ED31 /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
-		FACD080F1867E69D0093ED31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		FACD08111867E69D0093ED31 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FACD08181867E69D0093ED31 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FA7700821868FC4D0095AD72 /* DesktopDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7700851868FC4D0095AD72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FA7700881868FC4D0095AD72 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FA7700891868FC4D0095AD72 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA77008A1868FC4D0095AD72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA77008D1868FC4D0095AD72 /* DesktopDraw-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DesktopDraw-Info.plist"; sourceTree = "<group>"; };
+		FA77008F1868FC4D0095AD72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA7700911868FC4D0095AD72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA7700931868FC4D0095AD72 /* DesktopDraw-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DesktopDraw-Prefix.pch"; sourceTree = "<group>"; };
+		FA7700951868FC4D0095AD72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FA7700971868FC4D0095AD72 /* DDDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDDocument.h; sourceTree = "<group>"; };
+		FA7700981868FC4D0095AD72 /* DDDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDDocument.m; sourceTree = "<group>"; };
+		FA77009B1868FC4D0095AD72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DDDocument.xib; sourceTree = "<group>"; };
+		FA77009E1868FC4D0095AD72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FA7700A01868FC4D0095AD72 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA7700A71868FC4D0095AD72 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FA7700C51869150C0095AD72 /* DDIconArrangement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDIconArrangement.h; sourceTree = "<group>"; };
+		FA7700C61869150C0095AD72 /* DDIconArrangement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDIconArrangement.m; sourceTree = "<group>"; };
+		FA7700C71869150C0095AD72 /* DDIconPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDIconPath.h; sourceTree = "<group>"; };
+		FA7700C81869150C0095AD72 /* DDIconPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDIconPath.m; sourceTree = "<group>"; };
+		FA7700C91869150C0095AD72 /* DDIconUndoStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDIconUndoStack.h; sourceTree = "<group>"; };
+		FA7700CA1869150C0095AD72 /* DDIconUndoStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDIconUndoStack.m; sourceTree = "<group>"; };
+		FA7700CC1869150C0095AD72 /* DDDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDrawView.h; sourceTree = "<group>"; };
+		FA7700CD1869150C0095AD72 /* DDDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDrawView.m; sourceTree = "<group>"; };
+		FA7700D2186915290095AD72 /* Finder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Finder.h; sourceTree = "<group>"; };
+		FA7700D3186918D20095AD72 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		FA7700D51869196D0095AD72 /* DDUndoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDUndoController.h; sourceTree = "<group>"; };
+		FA7700D61869196D0095AD72 /* DDUndoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDUndoController.m; sourceTree = "<group>"; };
+		FA7700D818691F030095AD72 /* Finder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Finder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FACD07F31867E69D0093ED31 /* Frameworks */ = {
+		FA77007F1868FC4D0095AD72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA5950DD1868B2C600603952 /* ScriptingBridge.framework in Frameworks */,
-				FACD07FA1867E69D0093ED31 /* Cocoa.framework in Frameworks */,
+				FA7700D4186918D20095AD72 /* ScriptingBridge.framework in Frameworks */,
+				FA7700861868FC4D0095AD72 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA5950E41868CA7200603952 /* Model */ = {
+		FA7700791868FC4D0095AD72 = {
 			isa = PBXGroup;
 			children = (
-				FA5950E51868CA7200603952 /* ANIconArrangement.h */,
-				FA5950E61868CA7200603952 /* ANIconArrangement.m */,
-				FA5950E71868CA7200603952 /* ANIconPath.h */,
-				FA5950E81868CA7200603952 /* ANIconPath.m */,
-				FA5950E91868CA7200603952 /* ANIconUndoStack.h */,
-				FA5950EA1868CA7200603952 /* ANIconUndoStack.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FA5950EE1868CA9B00603952 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FA5950EF1868CA9B00603952 /* ANDrawView.h */,
-				FA5950F01868CA9B00603952 /* ANDrawView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FACD07ED1867E69D0093ED31 = {
-			isa = PBXGroup;
-			children = (
-				FACD07FF1867E69D0093ED31 /* DesktopDraw */,
-				FACD07F81867E69D0093ED31 /* Frameworks */,
-				FACD07F71867E69D0093ED31 /* Products */,
+				FA77008B1868FC4D0095AD72 /* DesktopDraw */,
+				FA7700841868FC4D0095AD72 /* Frameworks */,
+				FA7700831868FC4D0095AD72 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FACD07F71867E69D0093ED31 /* Products */ = {
+		FA7700831868FC4D0095AD72 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FACD07F61867E69D0093ED31 /* DesktopDraw.app */,
+				FA7700821868FC4D0095AD72 /* DesktopDraw.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FACD07F81867E69D0093ED31 /* Frameworks */ = {
+		FA7700841868FC4D0095AD72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA5950DC1868B2C600603952 /* ScriptingBridge.framework */,
-				FACD07F91867E69D0093ED31 /* Cocoa.framework */,
-				FACD08181867E69D0093ED31 /* XCTest.framework */,
-				FACD07FB1867E69D0093ED31 /* Other Frameworks */,
+				FA7700D3186918D20095AD72 /* ScriptingBridge.framework */,
+				FA7700851868FC4D0095AD72 /* Cocoa.framework */,
+				FA7700A71868FC4D0095AD72 /* XCTest.framework */,
+				FA7700871868FC4D0095AD72 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FACD07FB1867E69D0093ED31 /* Other Frameworks */ = {
+		FA7700871868FC4D0095AD72 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FACD07FC1867E69D0093ED31 /* AppKit.framework */,
-				FACD07FD1867E69D0093ED31 /* CoreData.framework */,
-				FACD07FE1867E69D0093ED31 /* Foundation.framework */,
+				FA7700881868FC4D0095AD72 /* AppKit.framework */,
+				FA7700891868FC4D0095AD72 /* CoreData.framework */,
+				FA77008A1868FC4D0095AD72 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		FACD07FF1867E69D0093ED31 /* DesktopDraw */ = {
+		FA77008B1868FC4D0095AD72 /* DesktopDraw */ = {
 			isa = PBXGroup;
 			children = (
-				FA5950EE1868CA9B00603952 /* View */,
-				FA5950E41868CA7200603952 /* Model */,
-				FA9A3C581868B0520001B4BF /* Finder.h */,
-				FACD080B1867E69D0093ED31 /* ANAppDelegate.h */,
-				FACD080C1867E69D0093ED31 /* ANAppDelegate.m */,
-				FA5950F21868CADF00603952 /* ANDrawWC.h */,
-				FA5950F31868CADF00603952 /* ANDrawWC.m */,
-				FA5950F41868CADF00603952 /* ANDrawWC.xib */,
-				FACD080E1867E69D0093ED31 /* MainMenu.xib */,
-				FACD08111867E69D0093ED31 /* Images.xcassets */,
-				FACD08001867E69D0093ED31 /* Supporting Files */,
+				FA7700C41869150C0095AD72 /* Model */,
+				FA7700CB1869150C0095AD72 /* View */,
+				FA7700971868FC4D0095AD72 /* DDDocument.h */,
+				FA7700981868FC4D0095AD72 /* DDDocument.m */,
+				FA7700D51869196D0095AD72 /* DDUndoController.h */,
+				FA7700D61869196D0095AD72 /* DDUndoController.m */,
+				FA77009A1868FC4D0095AD72 /* DDDocument.xib */,
+				FA77009D1868FC4D0095AD72 /* MainMenu.xib */,
+				FA7700A01868FC4D0095AD72 /* Images.xcassets */,
+				FA77008C1868FC4D0095AD72 /* Supporting Files */,
 			);
 			path = DesktopDraw;
 			sourceTree = "<group>";
 		};
-		FACD08001867E69D0093ED31 /* Supporting Files */ = {
+		FA77008C1868FC4D0095AD72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FACD08011867E69D0093ED31 /* DesktopDraw-Info.plist */,
-				FACD08021867E69D0093ED31 /* InfoPlist.strings */,
-				FACD08051867E69D0093ED31 /* main.m */,
-				FACD08071867E69D0093ED31 /* DesktopDraw-Prefix.pch */,
-				FACD08081867E69D0093ED31 /* Credits.rtf */,
+				FA77008D1868FC4D0095AD72 /* DesktopDraw-Info.plist */,
+				FA77008E1868FC4D0095AD72 /* InfoPlist.strings */,
+				FA7700911868FC4D0095AD72 /* main.m */,
+				FA7700931868FC4D0095AD72 /* DesktopDraw-Prefix.pch */,
+				FA7700941868FC4D0095AD72 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA7700C41869150C0095AD72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA7700D2186915290095AD72 /* Finder.h */,
+				FA7700D818691F030095AD72 /* Finder.m */,
+				FA7700C51869150C0095AD72 /* DDIconArrangement.h */,
+				FA7700C61869150C0095AD72 /* DDIconArrangement.m */,
+				FA7700C71869150C0095AD72 /* DDIconPath.h */,
+				FA7700C81869150C0095AD72 /* DDIconPath.m */,
+				FA7700C91869150C0095AD72 /* DDIconUndoStack.h */,
+				FA7700CA1869150C0095AD72 /* DDIconUndoStack.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA7700CB1869150C0095AD72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA7700CC1869150C0095AD72 /* DDDrawView.h */,
+				FA7700CD1869150C0095AD72 /* DDDrawView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FACD07F51867E69D0093ED31 /* DesktopDraw */ = {
+		FA7700811868FC4D0095AD72 /* DesktopDraw */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FACD08271867E69D0093ED31 /* Build configuration list for PBXNativeTarget "DesktopDraw" */;
+			buildConfigurationList = FA7700B61868FC4E0095AD72 /* Build configuration list for PBXNativeTarget "DesktopDraw" */;
 			buildPhases = (
-				FACD07F21867E69D0093ED31 /* Sources */,
-				FACD07F31867E69D0093ED31 /* Frameworks */,
-				FACD07F41867E69D0093ED31 /* Resources */,
+				FA77007E1868FC4D0095AD72 /* Sources */,
+				FA77007F1868FC4D0095AD72 /* Frameworks */,
+				FA7700801868FC4D0095AD72 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -174,20 +177,20 @@
 			);
 			name = DesktopDraw;
 			productName = DesktopDraw;
-			productReference = FACD07F61867E69D0093ED31 /* DesktopDraw.app */;
+			productReference = FA7700821868FC4D0095AD72 /* DesktopDraw.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FACD07EE1867E69D0093ED31 /* Project object */ = {
+		FA77007A1868FC4D0095AD72 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = AN;
+				CLASSPREFIX = DD;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Alex Nichol";
 			};
-			buildConfigurationList = FACD07F11867E69D0093ED31 /* Build configuration list for PBXProject "DesktopDraw" */;
+			buildConfigurationList = FA77007D1868FC4D0095AD72 /* Build configuration list for PBXProject "DesktopDraw" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -195,69 +198,78 @@
 				en,
 				Base,
 			);
-			mainGroup = FACD07ED1867E69D0093ED31;
-			productRefGroup = FACD07F71867E69D0093ED31 /* Products */;
+			mainGroup = FA7700791868FC4D0095AD72;
+			productRefGroup = FA7700831868FC4D0095AD72 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FACD07F51867E69D0093ED31 /* DesktopDraw */,
+				FA7700811868FC4D0095AD72 /* DesktopDraw */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FACD07F41867E69D0093ED31 /* Resources */ = {
+		FA7700801868FC4D0095AD72 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FACD08041867E69D0093ED31 /* InfoPlist.strings in Resources */,
-				FA5950F61868CADF00603952 /* ANDrawWC.xib in Resources */,
-				FACD08121867E69D0093ED31 /* Images.xcassets in Resources */,
-				FACD080A1867E69D0093ED31 /* Credits.rtf in Resources */,
-				FACD08101867E69D0093ED31 /* MainMenu.xib in Resources */,
+				FA77009C1868FC4D0095AD72 /* DDDocument.xib in Resources */,
+				FA7700A11868FC4D0095AD72 /* Images.xcassets in Resources */,
+				FA7700901868FC4D0095AD72 /* InfoPlist.strings in Resources */,
+				FA7700961868FC4D0095AD72 /* Credits.rtf in Resources */,
+				FA77009F1868FC4D0095AD72 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FACD07F21867E69D0093ED31 /* Sources */ = {
+		FA77007E1868FC4D0095AD72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA5950EC1868CA7200603952 /* ANIconPath.m in Sources */,
-				FA5950F11868CA9B00603952 /* ANDrawView.m in Sources */,
-				FACD08061867E69D0093ED31 /* main.m in Sources */,
-				FA5950ED1868CA7200603952 /* ANIconUndoStack.m in Sources */,
-				FA5950EB1868CA7200603952 /* ANIconArrangement.m in Sources */,
-				FA5950F51868CADF00603952 /* ANDrawWC.m in Sources */,
-				FACD080D1867E69D0093ED31 /* ANAppDelegate.m in Sources */,
+				FA7700CF1869150C0095AD72 /* DDIconPath.m in Sources */,
+				FA7700D11869150C0095AD72 /* DDDrawView.m in Sources */,
+				FA7700991868FC4D0095AD72 /* DDDocument.m in Sources */,
+				FA7700D918691F030095AD72 /* Finder.m in Sources */,
+				FA7700921868FC4D0095AD72 /* main.m in Sources */,
+				FA7700D01869150C0095AD72 /* DDIconUndoStack.m in Sources */,
+				FA7700D71869196D0095AD72 /* DDUndoController.m in Sources */,
+				FA7700CE1869150C0095AD72 /* DDIconArrangement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FACD08021867E69D0093ED31 /* InfoPlist.strings */ = {
+		FA77008E1868FC4D0095AD72 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FACD08031867E69D0093ED31 /* en */,
+				FA77008F1868FC4D0095AD72 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		FACD08081867E69D0093ED31 /* Credits.rtf */ = {
+		FA7700941868FC4D0095AD72 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FACD08091867E69D0093ED31 /* en */,
+				FA7700951868FC4D0095AD72 /* en */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		FACD080E1867E69D0093ED31 /* MainMenu.xib */ = {
+		FA77009A1868FC4D0095AD72 /* DDDocument.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FACD080F1867E69D0093ED31 /* Base */,
+				FA77009B1868FC4D0095AD72 /* Base */,
+			);
+			name = DDDocument.xib;
+			sourceTree = "<group>";
+		};
+		FA77009D1868FC4D0095AD72 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA77009E1868FC4D0095AD72 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -265,7 +277,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FACD08251867E69D0093ED31 /* Debug */ = {
+		FA7700B41868FC4E0095AD72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -302,7 +314,7 @@
 			};
 			name = Debug;
 		};
-		FACD08261867E69D0093ED31 /* Release */ = {
+		FA7700B51868FC4E0095AD72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -333,7 +345,7 @@
 			};
 			name = Release;
 		};
-		FACD08281867E69D0093ED31 /* Debug */ = {
+		FA7700B71868FC4E0095AD72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -346,7 +358,7 @@
 			};
 			name = Debug;
 		};
-		FACD08291867E69D0093ED31 /* Release */ = {
+		FA7700B81868FC4E0095AD72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -362,25 +374,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FACD07F11867E69D0093ED31 /* Build configuration list for PBXProject "DesktopDraw" */ = {
+		FA77007D1868FC4D0095AD72 /* Build configuration list for PBXProject "DesktopDraw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FACD08251867E69D0093ED31 /* Debug */,
-				FACD08261867E69D0093ED31 /* Release */,
+				FA7700B41868FC4E0095AD72 /* Debug */,
+				FA7700B51868FC4E0095AD72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FACD08271867E69D0093ED31 /* Build configuration list for PBXNativeTarget "DesktopDraw" */ = {
+		FA7700B61868FC4E0095AD72 /* Build configuration list for PBXNativeTarget "DesktopDraw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FACD08281867E69D0093ED31 /* Debug */,
-				FACD08291867E69D0093ED31 /* Release */,
+				FA7700B71868FC4E0095AD72 /* Debug */,
+				FA7700B81868FC4E0095AD72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FACD07EE1867E69D0093ED31 /* Project object */;
+	rootObject = FA77007A1868FC4D0095AD72 /* Project object */;
 }

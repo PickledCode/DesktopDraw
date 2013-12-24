@@ -6,23 +6,22 @@
 //  Copyright (c) 2013 Alex Nichol. All rights reserved.
 //
 
-#import "ANIconPath.h"
+#import "DDIconPath.h"
 
 static CGPoint distanceAlong(CGPoint s, CGPoint e, CGFloat d);
 
-@interface ANIconPath (Private)
+@interface DDIconPath (Private)
 
 - (void)putIcon:(FinderItem *)item atPoint:(CGPoint)p onScreen:(NSScreen *)s;
 
 @end
 
-@implementation ANIconPath
+@implementation DDIconPath
 
 - (id)init {
     if ((self = [super init])) {
         pointAlloc = kANIconPathBuffer;
         lines = (CGPoint *)malloc(sizeof(CGPoint) * pointAlloc);
-        application = [SBApplication applicationWithBundleIdentifier:@"com.apple.Finder"];
     }
     return self;
 }
@@ -53,7 +52,7 @@ static CGPoint distanceAlong(CGPoint s, CGPoint e, CGFloat d);
 }
 
 - (void)applyToDesktop:(NSScreen *)theScreen {
-    SBElementArray * items = application.desktop.items;
+    SBElementArray * items = finderApplication().desktop.items;
     if (!items.count) return;
     // we have `items.count`, and we have a total length of `length`
     // now, we iterate along the path
@@ -91,8 +90,35 @@ static CGPoint distanceAlong(CGPoint s, CGPoint e, CGFloat d);
     }
 }
 
-- (ANIconArrangement *)currentArrangement {
-    return [[ANIconArrangement alloc] initWithDesktop:application.desktop];
+#pragma mark - Coding -
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    if ((self = [super init])) {
+        length = [aDecoder decodeDoubleForKey:@"length"];
+        NSInteger count = [aDecoder decodeIntegerForKey:@"count"];
+        lines = (CGPoint *)malloc(sizeof(CGPoint) * count);
+        pointCount = count;
+        pointAlloc = count;
+        // decode values
+        NSArray * decoded = [aDecoder decodeObjectForKey:@"points"];
+        NSAssert(decoded.count == count, @"Inconsistent counts");
+        for (int i = 0; i < decoded.count; i++) {
+            NSValue * value = decoded[i];
+            NSPoint point = [value pointValue];
+            lines[i] = CGPointMake(point.x, point.y);
+        }
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeDouble:length forKey:@"length"];
+    [aCoder encodeInteger:pointCount forKey:@"count"];
+    NSMutableArray * array = [NSMutableArray array];
+    for (int i = 0; i < pointCount; i++) {
+        [array addObject:[NSValue valueWithPoint:NSMakePoint(lines[i].x, lines[i].y)]];
+    }
+    [aCoder encodeObject:array forKey:@"points"];
 }
 
 #pragma mark - Private -

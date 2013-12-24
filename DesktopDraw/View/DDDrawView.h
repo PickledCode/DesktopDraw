@@ -7,14 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "ANIconPath.h"
+#import "DDIconPath.h"
 
-@interface ANDrawView : NSView {
-    ANIconPath * path;
+@interface DDDrawView : NSView {
+    DDIconPath * path;
 }
 
-@property (readonly) ANIconPath * path;
+@property (readonly) DDIconPath * path;
 
+- (void)updatePath:(DDIconPath *)aPath;
 - (void)clearPath;
 - (CGPoint)convertPointToRelativeCoords:(NSPoint)point;
 

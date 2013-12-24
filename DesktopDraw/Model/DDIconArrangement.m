@@ -6,13 +6,18 @@
 //  Copyright (c) 2013 Alex Nichol. All rights reserved.
 //
 
-#import "ANIconArrangement.h"
+#import "DDIconArrangement.h"
 
 static NSString * finderItemIdentifier(FinderItem * item);
 
-@implementation ANIconArrangement
+@implementation DDIconArrangement
 
 @synthesize locations;
+
++ (DDIconArrangement *)currentArrangement {
+    FinderApplication * app = finderApplication();
+    return [[DDIconArrangement alloc] initWithDesktop:app.desktop];
+}
 
 - (id)initWithDesktop:(FinderDesktopObject *)object {
     if ((self = [super init])) {
@@ -38,11 +43,13 @@ static NSString * finderItemIdentifier(FinderItem * item);
 
 - (void)applyToDesktop:(FinderDesktopObject *)object {
     for (FinderItem * item in object.items) {
-        item.desktopPosition = [locations[finderItemIdentifier(item)] pointValue];
+        NSValue * value = locations[finderItemIdentifier(item)];
+        if (!value) continue;
+        item.desktopPosition = [value pointValue];
     }
 }
 
-- (BOOL)isEqualToArrangement:(ANIconArrangement *)arr {
+- (BOOL)isEqualToArrangement:(DDIconArrangement *)arr {
     return [locations isEqualToDictionary:arr.locations];
 }
 

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FACD07F51867E69D0093ED31"
+               BlueprintIdentifier = "FA7700811868FC4D0095AD72"
                BuildableName = "DesktopDraw.app"
                BlueprintName = "DesktopDraw"
                ReferencedContainer = "container:DesktopDraw.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FACD08161867E69D0093ED31"
+               BlueprintIdentifier = "FA7700A51868FC4D0095AD72"
                BuildableName = "DesktopDrawTests.xctest"
                BlueprintName = "DesktopDrawTests"
                ReferencedContainer = "container:DesktopDraw.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FACD07F51867E69D0093ED31"
+            BlueprintIdentifier = "FA7700811868FC4D0095AD72"
             BuildableName = "DesktopDraw.app"
             BlueprintName = "DesktopDraw"
             ReferencedContainer = "container:DesktopDraw.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FACD07F51867E69D0093ED31"
+            BlueprintIdentifier = "FA7700811868FC4D0095AD72"
             BuildableName = "DesktopDraw.app"
             BlueprintName = "DesktopDraw"
             ReferencedContainer = "container:DesktopDraw.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FACD07F51867E69D0093ED31"
+            BlueprintIdentifier = "FA7700811868FC4D0095AD72"
             BuildableName = "DesktopDraw.app"
             BlueprintName = "DesktopDraw"
             ReferencedContainer = "container:DesktopDraw.xcodeproj">

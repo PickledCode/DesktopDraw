@@ -6,28 +6,33 @@
 //  Copyright (c) 2013 Alex Nichol. All rights reserved.
 //
 
-#import "ANDrawView.h"
+#import "DDDrawView.h"
 
-@implementation ANDrawView
+@implementation DDDrawView
 
 @synthesize path;
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     if ((self = [super initWithCoder:aDecoder])) {
-        path = [[ANIconPath alloc] init];
+        path = [[DDIconPath alloc] init];
     }
     return self;
 }
 
 - (id)initWithFrame:(NSRect)frameRect {
     if ((self = [super initWithFrame:frameRect])) {
-        path = [[ANIconPath alloc] init];
+        path = [[DDIconPath alloc] init];
     }
     return self;
 }
 
+- (void)updatePath:(DDIconPath *)aPath {
+    path = aPath;
+    [self setNeedsDisplay:YES];
+}
+
 - (void)clearPath {
-    path = [[ANIconPath alloc] init];
+    path = [[DDIconPath alloc] init];
     [self setNeedsDisplay:YES];
 }
 

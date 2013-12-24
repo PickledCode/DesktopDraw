@@ -5,7 +5,6 @@
 #import <AppKit/AppKit.h>
 #import <ScriptingBridge/ScriptingBridge.h>
 
-
 @class FinderApplication, FinderItem, FinderContainer, FinderComputerObject, FinderDisk, FinderFolder, FinderDesktopObject, FinderTrashObject, FinderFile, FinderAliasFile, FinderApplicationFile, FinderDocumentFile, FinderInternetLocationFile, FinderClipping, FinderPackage, FinderWindow, FinderFinderWindow, FinderDesktopWindow, FinderInformationWindow, FinderPreferencesWindow, FinderClippingWindow, FinderProcess, FinderApplicationProcess, FinderDeskAccessoryProcess, FinderPreferences, FinderLabel, FinderIconFamily, FinderIconViewOptions, FinderColumnViewOptions, FinderListViewOptions, FinderColumn, FinderAliasList;
 
 enum FinderPriv {
@@ -813,3 +812,4 @@ typedef enum FinderLvic FinderLvic;
 
 @end
 
+FinderApplication * finderApplication();

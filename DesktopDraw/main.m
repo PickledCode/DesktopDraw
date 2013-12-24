@@ -2,7 +2,7 @@
 //  main.m
 //  DesktopDraw
 //
-//  Created by Alex Nichol on 12/22/13.
+//  Created by Alex Nichol on 12/23/13.
 //  Copyright (c) 2013 Alex Nichol. All rights reserved.
 //
 

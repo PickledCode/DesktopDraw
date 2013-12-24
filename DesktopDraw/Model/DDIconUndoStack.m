@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Alex Nichol. All rights reserved.
 //
 
-#import "ANIconUndoStack.h"
+#import "DDIconUndoStack.h"
 
-@implementation ANIconUndoStack
+@implementation DDIconUndoStack
 
 - (id)init {
     if ((self = [super init])) {
@@ -18,11 +18,11 @@
     return self;
 }
 
-- (ANIconArrangement *)currentArrangement {
+- (DDIconArrangement *)currentArrangement {
     return undoStack.lastObject;
 }
 
-- (void)pushArrangement:(ANIconArrangement *)arr {
+- (void)pushArrangement:(DDIconArrangement *)arr {
     [redoStack removeAllObjects];
     if ([self.currentArrangement isEqualToArrangement:arr]) return;
     [undoStack addObject:arr];
@@ -41,7 +41,7 @@
     [redoStack addObject:undoStack.lastObject];
     [undoStack removeLastObject];
     
-    FinderApplication * app = [SBApplication applicationWithBundleIdentifier:@"com.apple.Finder"];
+    FinderApplication * app = finderApplication();
     [undoStack.lastObject applyToDesktop:app.desktop];
     
     while (undoStack.count > kMaximumStackSize) {
@@ -54,7 +54,7 @@
     [undoStack addObject:redoStack.lastObject];
     [redoStack removeLastObject];
     
-    FinderApplication * app = [SBApplication applicationWithBundleIdentifier:@"com.apple.Finder"];
+    FinderApplication * app = finderApplication();
     [undoStack.lastObject applyToDesktop:app.desktop];
 }
 

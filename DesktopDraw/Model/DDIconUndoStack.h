@@ -7,18 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ANIconArrangement.h"
+#import "DDIconArrangement.h"
 
 #define kMaximumStackSize 100
 
-@interface ANIconUndoStack : NSObject <NSCoding> {
+@interface DDIconUndoStack : NSObject <NSCoding> {
     NSMutableArray * undoStack;
     NSMutableArray * redoStack;
 }
 
-@property (readonly) ANIconArrangement * currentArrangement;
+@property (readonly) DDIconArrangement * currentArrangement;
 
-- (void)pushArrangement:(ANIconArrangement *)arr;
+- (void)pushArrangement:(DDIconArrangement *)arr;
 
 - (BOOL)canUndo;
 - (BOOL)canRedo;
